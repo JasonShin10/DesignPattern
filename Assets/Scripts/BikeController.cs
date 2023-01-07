@@ -29,7 +29,7 @@ namespace Chapter.Observer
         void Awake()
         {
          _hudController = gameObject.AddComponent<HUDController>();
-            _cameraController = (CameraController)FindObjectOfType(typeof(CameraController));
+         _cameraController = (CameraController)FindObjectOfType(typeof(CameraController));
         }
 
         private void Start()
@@ -42,8 +42,7 @@ namespace Chapter.Observer
             if (_hudController)
                 Attach(_hudController);
             if (_cameraController)
-                Attach(_cameraController);
-            
+                Attach(_cameraController);        
         }
         void OnDisable()
         {
